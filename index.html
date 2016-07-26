@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<title>游伟基个人作品网站</title>
 		<link type="text/css" href="css/main.css" rel="stylesheet" />
+		<script src="js/jquery-1.11.1.js"></script>
 	</head>
 	<body>
 		<!--右侧菜单栏-->
@@ -13,546 +14,192 @@
 			<li data-slide="3"></li>
 			<li data-slide="4"></li>
 			<li data-slide="5"></li>
-			<li data-slide="6"></li>
+			<li data-slide="6"></li>			
 		</ul>
 		<!--第一页 开场-->
-		<div id="slide1" class="slide" data-slide="1" data-stellar-background-ratio="0.5">
-		    <div class="container cf">
-		    	<!--嵌套三层-->
-		        <div class="home-art cf">
-		            <div id="port1">
-		            	<!--视差-->
-		                <div class="parallax-layer">
-		                	<!--云层-->
-		                    <div id="layer-characters"></div>
-		                </div>
-		                <div class="parallax-layer">
-		                    <div id="layer-cloud1"></div>
-		                </div>
-		                <div class="parallax-layer">
-		                    <div id="layer-cloud2"></div>
-		                </div>
-		                <div class="parallax-layer">
-		                    <div id="layer-cloud3"></div>
-		                </div>
-		            </div>
-		            <div class="home-container">
-		                <img class="parallax-layer" src="img/home_cont_bg.jpg" alt="">
-		            </div>
-		
-		            <div class="home-text" data-stellar-ratio="1.6" data-stellar-vertical-offset="40">
-		                <h2>Welcome to the world of</h2>
-		
-		                <h1>Designeat</h1>
-		
-		                <div class="home-skills">
-		                    <ul class="cf">
-		                        <li>Ux</li>
-		                        <li class="home-dot">.</li>
-		                        <li>Design</li>
-		                        <li class="home-dot">.</li>
-		                        <li>Development</li>
-		                        <li class="home-dot">.</li>
-		                        <li>Print</li>
-		                        <li class="home-dot">.</li>
-		                        <li>Illustration</li>
-		                    </ul>
-		                </div>
-		                <p>The world of two adventurers, set on course of endless exploration.
-		                    Searching for new ways to improve,
-		                    doing what we love the most…
-		                    Creating with ambitions sky high.
-		                </p>
-		                <a class="button" data-slide="3">Meet us in person</a>
-		            </div>
-		        </div>
-		    </div>
-		</div>
+		<section class="slide slide1">
+			<div class="container">
+				<img class="hill move" data-offset="2" src="images/home_cont_bg.png" alt="" draggable="false" />
+				<div class="text">
+					<h2>WELCOME TO THE WORLD OF</h2>
+					<h1>DESIGNEAT</h1>
+					<p><span>UX</span>·<span>DESIGN</span>·<span>DEVELOPMENT</span>·<span>PRINT</span>·<span>ILLUSTRATION</span></p>
+					<p>
+						The world of two adventurers, set on course of endless <br>
+						exploration. Searching for new ways to improve, doing what<br>
+						we love the most… Creating with ambitions sky high.
+					</p>
+					<a href="#" target="_blank">Meet us in person</a>
+				</div>
+				<div class="view_move">
+					<span class="cloud1 move" data-offset="5"></span>
+					<span class="cloud2 move" data-offset="4"></span>
+					<span class="cloud3 move" data-offset="3"></span>
+					<span class="person move" data-offset="6"></span>
+				</div>
+				
+			</div>
+		</section>
 		
 		<!--第二页 历程-->
-		<div id="slide2" class="slide" data-slide="2" data-stellar-background-ratio="0.5">
-		    <div class="container cf">
-		        <div class="timeline">
-		            <ul>
-		                <li class="cf">
-		                    <div class="middle-section"><p>2010</p></div>
-		                    <div class="text-section">
-		                        <p>
-		                            Our first project ever! Ah, we were so young...
-		                        </p>
-		                        <a>But we learned a few tricks</a>
-		                    </div>
-		                </li>
-		
-		                <li class="vertical-separator">
-		                    <div class="vertical-lines"></div>
-		                </li>
-		
-		                <li class="cf">
-		                    <div class="middle-section"><p>2011</p></div>
-		                    <div class="text-section">
-		                        <p>
-		                            The first real job, with real money involved.
-		                        </p>
-		                        <a>And the phone starts ringing</a>
-		                    </div>
-		                </li>
-		
-		                <li class="vertical-separator">
-		                    <div class="vertical-lines"></div>
-		                </li>
-		
-		                <li class="cf">
-		                    <div class="middle-section"><p>2012</p></div>
-		                    <div class="text-section">
-		                        <p>
-		                            over 217458 projects and 70k clients later... ;-)
-		                        </p>
-		                        <a>Still passionate</a>
-		                    </div>
-		                </li>
-		
-		                <li class="vertical-separator">
-		                    <div class="vertical-lines"></div>
-		                </li>
-		
-		                <li class="cf">
-		                    <div class="middle-section"><p>2013</p></div>
-		                    <div class="text-section">
-		                        <p>
-		                            Working on several interesting projects
-		                        </p>
-		                        <a>Top secret kinda stuff.</a>
-		                    </div>
-		                </li>
-		            </ul>
-		        </div>
-		        <div class="middle1-art" data-stellar-ratio="-0.2">
-		            <div id="layer-middle1-characters"></div>
-		        </div>
-		    </div>
-		</div>
-			
-		</div>
-		
-		<!--第三页 个人介绍-->
-		<div id="slide3" class="slide" data-slide="3" data-stellar-background-ratio="0.5">
-		    <div class="container">
-		        <div id="port3" class="cf">
-		            <!-- <div class="parallax-layer">
-		                <div id="layer-trees"></div>
-		            </div> -->
-		            <div id="layer-meetUsInPerson-characters"></div>
-		            <div id="layer-meetUsInPerson-characters2"></div>
-		            <div class="about-grass"></div>
-		        </div>
-		
-		        <div class="meetUsInPerson-container" data-stellar-ratio="0.7">
-		            <img class="parallax-layer" src="img/trees-marta.png" alt="">
-		        </div>
-		
-		        <div class="marta-block cf">
-		            <h2>Marta Krstic <a class="linkedin" target="new" href="#"><img
-		                    src="img/linkedin_ico.png" alt=""></a></h2>
-		
-		            <h3>Designeats visual creator</h3>
-		
-		            <p>Hey, my name is Marta and I play the key role in this “team”.
-		                I come up with tons of brilliant ideas and I sure know how to translate them to reality.
-		                I’ve made this world look like it does, and the fat one over there just answers the phone and types the
-		                code.
-		            </p>
-		
-		            <h3>I specialise in</h3>
-		
-		            <div class="skill-block">
-		                <p>Ux</p>
-		
-		                <p>ps</p>
-		
-		                <p>ai</p>
-		            </div>
-		        </div>
-		        <img class="marta-clickme" src="img/click_marta.png" alt="">
-		
-		        <div class="bojan-block cf">
-		            <h2>Bojan Joncic <a class="linkedin" target="new" href="#"><img
-		                    src="img/linkedin_ico.png" alt=""></a></h2>
-		
-		            <h3>Designeats CEO DIRECTOR LEGEND</h3>
-		
-		            <p>Hi there, my name is Bojan and I am the backbone of this “team”. I come up with, like, thousands of great
-		                ideas and I easily translate them to reality.
-		                Basically… I've made this world work, the fat one, over there, just answers the phone and plays with her
-		                pen.
-		            </p>
-		
-		            <h3>I specialise in</h3>
-		
-		            <div class="skill-block">
-		                <p>Ux</p>
-		
-		                <p>Html</p>
-		
-		                <p>Css</p>
-		
-		                <p>Js</p>
-		            </div>
-		        </div>
-		        <img class="bojan-clickme" src="img/click_bojan.png" alt="">
-		    </div>
-		</div>
-		
-		<!--第四页 心得及作品-->
-		<div id="slide4" class="slide" data-slide="4" data-stellar-background-ratio="0.5">
+		<section class="slide slide2">
 			<div class="container">
-			    <!-- <h2 class="how-headline">How we do?</h2> -->
-			    <ul class="services cf">
-			        <li class="">
-			            <img src="img/step1.png" alt="">
-			
-			            <h2>Get the facts</h2>
-			
-			            <p>Always trying to build around the data.</p>
-			            <span></span>
-			        </li>
-			        <li>
-			            <img src="img/step2.png" alt="">
-			
-			            <h2>Test the concept</h2>
-			
-			            <p>The longer you stay on paper, the better design you end up with.</p>
-			            <span></span>
-			        </li>
-			        <li>
-			            <img src="img/step3.png" alt="">
-			
-			            <h2>Do the art</h2>
-			
-			            <p>Oh, oh, here comes the fun part... Says Marta...</p>
-			            <span></span>
-			        </li>
-			        <li>
-			            <img src="img/step4.png" alt="">
-			
-			            <h2>Make it work</h2>
-			
-			            <p>Make it work on a refrigerator, but I aint doing IE :)</p>
-			            <span></span>
-			        </li>
-			        <a class="surprise" href="#" target="new">
-			            <li>
-			                <img src="img/step5.png" alt="">
-			
-			                <h2>Push it live</h2>
-			
-			                <p>Send our child into the world and listen to the audience.</p>
-			                <span></span>
-			                <img class="suprise-msg" src="img/like_tool.png">
-			            </li>
-			        </a>
-			    </ul>
+				<div class="list">
+					<ol>
+						<li>
+							<span>2010</span>
+							<div class="txt">
+								<p>Our first project ever! Ah, we were so young...</p>
+								<p>But we learned a few tricks</p>
+							</div>
+						</li>
+						<li>
+							<span>2011</span>
+							<div class="txt">
+								<p>The first real job, with real money involved.</p>
+								<p>And the phone starts ringing</p>
+							</div>
+						</li>
+						<li>
+							<span>2012</span>
+							<div class="txt">
+								<p>over 217458 projects and 70k clients later... ;-)</p>
+								<p>Still passionate</p>
+							</div>
+						</li>
+						<li>
+							<span>2013</span>
+							<div class="txt">
+								<p>Working on several interesting projects</p>
+								<p>Top secret kinda stuff.</p>
+							</div>
+						</li>
+					</ol>
+				</div>
+				<span class="person"></span>
 			</div>
-			
-			<div class="work-container">
-			    <h2>Selected work</h2>
-			
-			    <div class="sort-work-wrapper"> 
-			        <ul class="sort-work cf">
-			            <li class="filter" data-filter="all">All</li>
-			            <li class="filter" data-filter="web">Web</li>
-			            <li class="filter" data-filter="mobile">Mobile</li>
-			            <li class="filter" data-filter="logo-and-print">Logo & Print</li>
-			            <li class="filter" data-filter="personal">Personal Projects</li>
-			        </ul>
-			    </div>
-			
-			    <ul id="Grid" class="thumbs cf">
-			        
-			        <li class="mix all web">
-			            <img src="img/th_sparklina.jpg" alt="">
-			
-			            <div class="back-info">
-			                <h2>Sparklina</h2>
-			                <a class="button-normal" href="projects/sparklina.php">See full project</a>
-			            </div>
-			        </li>
-			
-			        <li class="mix all web">
-			            <img src="img/th_home.jpg" alt="">
-			
-			            <div class="back-info">
-			                <h2>Home 011</h2>
-			                <a class="button-normal" href="projects/home011.php">See full project</a>
-			            </div>
-			        </li>
-			        
-			        <li class="mix all mobile personal">
-			            <img src="img/th_except.jpg" alt="">
-			
-			            <div class="back-info">
-			                <h2>Except You</h2>
-			                <a class="button-normal" href="projects/except_you.php">See full project</a>
-			            </div>
-			        </li>
-			        <li class="mix all web">
-			            <img src="img/musculus.jpg" alt="">
-			
-			            <div class="back-info">
-			                <h2>Musculus</h2>
-			                <a class="button-normal" href="projects/musculus.php">See full project</a>
-			            </div>
-			        </li>
-			        <li class="mix all web">
-			            <img src="img/th_weightless.jpg" alt="">
-			
-			            <div class="back-info">
-			                <h2>Weightless</h2>
-			                <a class="button-normal" href="projects/weightless.php">See full project</a>
-			            </div>
-			        </li>
-			        <li class="mix all mobile personal">
-			            <img src="img/th_clock.jpg" alt="">
-			
-			            <div class="back-info">
-			                <h2>Clock App</h2>
-			                <a class="button-normal" href="projects/clock.php">See full project</a>
-			            </div>
-			        </li>
-			        <li class="mix all web print logo-and-print">
-			            <img src="img/th_yoursmile.jpg" alt="">
-			
-			            <div class="back-info">
-			                <h2>Your smile</h2>
-			                <a class="button-normal" href="projects/yoursmile.php">See full project</a>
-			                <!-- <a class="visit-site" href="#">Visit website</a> -->
-			            </div>
-			        </li>
-			        <li class="mix all web">
-			            <img src="img/th_designers3.jpg" alt="">
-			
-			            <div class="back-info">
-			                <h2>Designers3</h2>
-			                <a class="button-normal" href="projects/designers3.php">See full project</a>
-			                <!-- <a class="visit-site" href="#">Visit website</a> -->
-			            </div>
-			        </li>
-			        <li class="mix all web personal">
-			            <img src="img/th_antiux.jpg" alt="">
-			
-			            <div class="back-info-soon">
-			                <h2>Coming soon</h2>
-			            </div>
-			        </li>
-			        <li class="mix all web illustration">
-			            <img src="img/th_vampiri.jpg" alt="">
-			
-			            <div class="back-info">
-			                <h2>The Vampires</h2>
-			                <a class="button-normal" href="projects/vampiri.php">See full project</a>
-			            </div>
-			        </li>
-			        <li class="mix all web logo-and-print">
-			            <img src="img/th_rekordr.jpg" alt="">
-			
-			            <div class="back-info">
-			                <h2>Rekordr</h2>
-			                <a class="button-normal" href="projects/rekordr.php">See full project</a>
-			            </div>
-			        </li>
-			        <li class="mix all web">
-			            <img src="img/th_djokovic.jpg" alt="">
-			
-			            <div class="back-info">
-			                <h2>Novak Djokovic Foundation</h2>
-			                <a class="button-normal" href="projects/djokovic.php">See full project</a>
-			            </div>
-			        </li>
-			        <li class="mix all web">
-			            <img src="img/th_trendy.jpg" alt="">
-			
-			            <div class="back-info-soon">
-			                <h2>Coming soon</h2>
-			            </div>
-			        </li>
-			        
-			        <!-- LOGO -->
-			
-			        <li class="mix all logo-and-print illustration">
-			            <img src="img/th_buddha.jpg" alt="">
-			
-			            <div class="back-info">
-			                <h2>Fatty Buddha</h2>
-			                <a class="button-normal" href="projects/buddha.php">See full project</a>
-			            </div>
-			        </li>
-			        <li class="mix all logo-and-print">
-			            <img src="img/th_freeforall.jpg" alt="">
-			
-			            <div class="back-info">
-			                <h2>Free for all</h2>
-			                <a class="button-normal" href="projects/34.php">See full project</a>
-			            </div>
-			        </li>
-			        <li class="mix all logo-and-print">
-			            <img src="img/th_paleo.jpg" alt="">
-			
-			            <div class="back-info">
-			                <h2>Paleo Dream</h2>
-			                <a class="button-normal" href="projects/paleo.php">See full project</a>
-			            </div>
-			        </li>
-			        <li class="mix all logo-and-print illustration">
-			            <img src="img/th_perfectfuel.jpg" alt="">
-			
-			            <div class="back-info">
-			                <h2>Perfect Fuel</h2>
-			                <a class="button-normal" href="projects/perfect_fuel.php">See full project</a>
-			            </div>
-			        </li>
-			
-			        <!-- MOBILE -->
-			        
-			        <li class="mix all mobile">
-			            <img src="img/th_social.jpg" alt="">
-			
-			            <div class="back-info">
-			                <h2>Social App</h2>
-			                <a class="button-normal" href="projects/social.php">See full project</a>
-			            </div>
-			        </li>
-			        <li class="mix all mobile">
-			            <img src="img/th_beauty.jpg" alt="">
-			
-			            <div class="back-info">
-			                <h2>Beauty App</h2>
-			                <a class="button-normal" href="projects/beauty.php">See full project</a>
-			            </div>
-			        </li>
-			
-			        <!-- PRINT -->
-			
-			        <li class="mix all logo-and-print illustration personal">
-			            <img src="img/th_sweetsorrow.jpg" alt="">
-			
-			            <div class="back-info-soon">
-			                <h2>Coming soon</h2>
-			            </div>
-			        </li>
-			
-			        <!-- ILLUSTRATION -->
-			
-			        <li class="mix all illustration personal">
-			            <img src="img/th_comic.jpg" alt="">
-			
-			            <div class="back-info">
-			                <h2>I remember the soup</h2>
-			                <a class="button-normal" href="projects/comic.php">See full project</a>
-			            </div>
-			        </li>
-			    </ul>
-			
-			    <div class="container center">
-			        <a class="button" data-slide="6" href="#">Get in touch</a>
-			    </div>
+		</section>
+		
+		<!-- 第三部分 -->
+		<section class="slide slide3">
+			<div class="container">
+				<img class="forest" src="images/trees-marta.png" width="1320" height="943" alt="" draggable="false" />
+				<!-- 跷跷板 -->
+				<div class="seesaw">
+					<div class="inforL show">
+						<h2>Marta Krstic</h2>
+						<h3>Designeats visual creator</h3>
+						<p>Hey, my name is Marta and I play the key role in this “team”. I come up with tons of brilliant ideas and I sure know how to translate them to reality.I’ve made this world look like it does, and the fat one over there just answers the phone and types the code.</p>
+						<h3>I specialise in</h3>
+						<ul>
+							<li>ux</li>
+							<li>ps</li>
+							<li>ai</li>
+						</ul>
+						<span class="clickR"></span>
+					</div>
+					<div class="inforR hide">
+						<h2>Bojan Joncic</h2>
+						<h3>Designeats CEO DIRECTOR LEGEND</h3>
+						<p>Hi there, my name is Bojan and I am the backbone of this “team”. I come up with, like, thousands of great ideas and I easily translate them to reality. Basically… I've made this world work, the fat one, over there, just answers the phone and plays with her pen.</p>
+						<h3>I specialise in</h3>
+						<ul>
+							<li>Ux</li>
+							<li>Html</li>
+							<li>Css</li>
+							<li>Js</li>
+						</ul>
+						<span class="clickL"></span>
+					</div>
+				</div>
+				<span class="seesawImg"></span>
 			</div>
+			<div class="bg"></div>
+		</section>
+		
+		<!-- 第四部分 -->
+		<section class="slide slide4">
+			<div class="container">
+				<ul class="skill clearfix">
+					<li>
+						<span><img src="images/step1.png" width="89" height="88" draggable="false"/></span>
+						<h3>Get the facts</h3>
+						<p>Always trying to build around the data.</p>
+					</li>
+					<li>
+						<span><img src="images/step2.png" width="89" height="88" draggable="false"/></span>
+						<h3>Test the concept</h3>
+						<p>The longer you stay on paper, the better design you end up with.</p>
+					</li>
+					<li>
+						<span><img src="images/step3.png" width="89" height="88" draggable="false"/></span>
+						<h3>Do the art</h3>
+						<p>Oh, oh, here comes the fun part... Says Marta...</p>
+					</li>
+					<li>
+						<span><img src="images/step4.png" width="89" height="88" draggable="false"/></span>
+						<h3>Make it work</h3>
+						<p>Make it work on a refrigerator, but I aint doing IE :)</p>
+					</li>
+					<li>
+						<span><img src="images/step5.png" width="89" height="88" draggable="false"/></span>
+						<h3>Push it live</h3>
+						<p>Send our child into the world and listen to the audience.</p>
+					</li>
+				</ul>
 			</div>
+			<!-- 作品集合 -->
+			<div class="worksWrap">
+				<h3>Selected work</h3>
+				<div class="works">
+					<nav class="worksList">
+						<a href="javascript:;" class="active">All</a>
+						<a href="javascript:;">Web</a>
+						<a href="javascript:;">Mobile</a>
+						<a href="javascript:;">Demos</a>
+					</nav>
+					<div class="worksBox">
+						<ul>
+							<li>
+								<a href="#">
+									<img src="images/th_antiux.jpg" alt="" draggable="false"/>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/th_antiux.jpg" alt="" draggable="false"/>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/th_antiux.jpg" alt="" draggable="false"/>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/th_antiux.jpg" alt="" draggable="false"/>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
 		
-		<!--第五页 个人推荐，音乐，电影-->
-		<div id="slide5" class="slide" data-slide="5" data-stellar-background-ratio="0.5">
-		    <div class="middle2-characters" data-stellar-ratio="1.3" data-stellar-vertical-offset="780"></div>
-		    <div class="middle2-clouds" data-stellar-ratio="-0.1"></div>
-		    <div class="container">
-		        <ul class="feed-wrapper">
-		            <li class="twitter-feed">
-		                <div class="feed-icon-wrapper">
-		                    <img src="img/twitter_dark_ico.png" alt="">
 		
-		                    <div class="triangle"></div>
-		                </div>
-		                <a class="twitter-timeline" href="https://twitter.com/desigNeat_rs"
-		                    data-tweet-limit="1" data-chrome="nofooter noheader noborders transparent" 
-		                    data-link-color="#2b182c"
-		                    data-widget-id="398450829528559616">Tweets by @desigNeat_rs
-		                </a>
-		            </li>
-		            <li class="dribbble-invites">
-		                <div class="feed-icon-wrapper">
-		                    <img src="img/dribbble_dark_ico.png" alt="">
+		<!-- 第五部分  -->
+		<section class="slide slide5">
+			<div class="container">
+				<img class="sky move" data-offset="2" src="images/contact_cont_bg.jpg" width="1600" height="880" draggable="false"/>
+				<span class="person move" data-offset="3"></span>
+				<div class="text">
+					<h2>Get in touch</h2>
+					<p>Did you know that the greatest ideas pop into our minds during the sleep, while we dream? Well, this is our dream job, so let us dream amazing ideas for you, and turn them into great results while awake.</p>
+					<a href="#" target="_blank">Hire us</a>
+				</div>
+			</div>
+		</section>
 		
-		                    <div class="triangle"></div>
-		                </div>
-		                <div class="info-content players-list">
-		                    <p class="info-text">Some of our favourite dribbble players.</p>
-		                    <a target="new" href="http://dribbble.com/adline">Szende Brassai, </a>
-		                    <a target="new" href="http://dribbble.com/BurntToast">Burnt Toast Creative, </a>
-		                    <a target="new" href="http://dribbble.com/BarthelemyChalvet">Barthelemy Chalvet, </a>
-		                    <a target="new" href="http://dribbble.com/megdraws">Meg Robichaud, </a>
-		                    <a target="new" href="http://dribbble.com/bluroon">Bluroon, </a>
-		                    <a target="new" href="http://dribbble.com/gebe">Elia Colombo, </a>
-		                    <a target="new" href="http://dribbble.com/sevkanariburnu">Sevkan Ariburnu.</a>
-		                </div>
-		            </li>
-		            <li class="playlists">
-		                <div class="feed-icon-wrapper">
-		                    <img src="img/music_ico.png" alt="">
-		
-		                    <div class="triangle"></div>
-		                </div>
-		                <div class="info-content">
-		                    <p class="info-text">We listen to the music while we work, you know staying sane and stuff.</p>
-		
-		                    <div class="feed-footer cf">
-		                        <p>Check out some of our playlists</p>
-		
-		                        <div class="feed-link-wrapper">
-		                            <a target="new" href="http://grooveshark.com/playlist/DesigNeat+img/92344852" class="grooveshark"></a>
-		                            <a target="new" href="http://www.stereomood.com/designeat_rs/mixes/338279/designeat%40work" class="stereomood"></a>
-		                        </div>
-		                    </div>
-		                </div>
-		            </li>
-		        </ul>
-		    </div>
-		</div>
-		
-		<!--第六页 联系方式-->
-		<div id="slide6" class="slide" data-slide="6" data-stellar-background-ratio="0.5">
-		    <div class="container">
-		        <div class="getInTouch-art">
-		            <div id="port6">
-		                <div class="parallax-layer">
-		                    <div id="layer-getInTouch-characters"></div>
-		                </div>
-		                <!-- <div class="parallax-layer">
-		                    <div id="layer-stars"></div>
-		                </div> -->
-		            </div>
-		
-		            <div class="getInTouch-container">
-		                <img class="parallax-layer" src="img/contact_cont_bg.jpg" alt="">
-		            </div>
-		
-		            <div class="getInTouch-text" data-stellar-ratio="0.5">
-		                <h2>Get in touch</h2>
-		
-		                <p>
-		                    Did you know that the greatest ideas pop into our minds during the sleep, while we dream? Well, this
-		                    is our dream job, so let us dream amazing ideas for you, and turn them into great results while
-		                    awake.
-		                </p>
-		                <a class="button-normal right" href="mailto:designeat@live.com?subject=Hi desigNeat, we would like to work with you.">Hire us</a>
-		            </div>
-		            <div class="social" data-stellar-ratio="1.5">
-		                <div class="social-icon-wrap">    
-		                    <p>Lets <br> connect</p>
-		                    <a href="https://twitter.com/desigNeat_rs" target="new" class="twitter" data-stellar-ratio="1.5"></a>
-		                    <a href="http://dribbble.com/designeat" target="new" class="dribbble" data-stellar-ratio="1.8"></a>
-		                    <a href="http://www.behance.net/designeat" target="new" class="behance" data-stellar-ratio="2"></a>
-		                </div>
-		            </div>
-		        </div>
-		    </div>
-		</div>
+	
 	</body>
 </html>
