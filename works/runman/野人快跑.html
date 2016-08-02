@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>css3动画效果</title>
+	<style>
+
+		#yeren{
+			margin-left: 50%;
+			width: 140px;
+			height: 150px;
+			background: url(player.png) no-repeat;
+			animation: move 1s steps(12) infinite;
+		}
+		/* steps 多少幅  infinite 无限循环 */
+		@-webkit-keyframes move{
+			0%{
+				background-position: 0 0;
+			}
+			100%{
+				background-position: -1680px 0;
+			}
+		}
+
+		/* 传送条 */
+		#xijianchui{
+			width: 2000px;
+			height: 50px;
+			background: -webkit-repeating-linear-gradient(45deg,
+			#5cb65c 0, #5cb65c 30px, #74c27c 30px, #74c274 60px);
+			animation: ground 1s linear infinite;
+		}
+		@-webkit-keyframes ground{
+			0%{
+				background-position: 0 0;
+			}
+			100%{
+				background-position: -86px 0;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div style="width:600px; height:300px;overflow:hidden;">
+		<div id="yeren"></div>
+		<div id="xijianchui"></div>
+	</div>
+</body>
+</html>
