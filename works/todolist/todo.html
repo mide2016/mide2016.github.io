@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+    	<link rel="stylesheet" type="text/css" href="css/index.css">
+    	<script src="src/app.js"></script>
+		<script src="src/react.js"></script>
+		<script src="src/react-dom.js"></script>
+		<script src="src/browser.min.js"></script>
+		<script src="src/unit.js"></script>
+</head>
+<body>
+	<section class="todoapp" id="todoapp"></section>
+	<script type="text/babel">
+		var Item = React.createClass({
+			render:function(){
+				return  <li className={
+								classNames({completed:this.props.isChecked})
+						}>
+			                <div className="view">
+			                    <input 
+			                    	className="toggle" 
+			                    	type="checkbox" 
+			                    	checked={this.props.isChecked} 
+			                    	onChange={this.itemChange}
+			                    />
+			                    <label>{this.props.title}</label>
+			                    <button className="destroy" onClick={this.clickHandle}></button>
+			                </div>
+		            	</li>
+			},
+			itemChange:function(){
+				this.props.change(this.props.id)
+			},
+			clickHandle:function(){
+				this.props.delectItem(this.props.id)
+			}
+		})
+
+		var TodoApp = React.createClass({
+			render:function(){
+				var datas = this.props.data;
+				//累加的初始值，用于全选
+				var num=0;
+				//给内容和底部命名，等下存这两个部分的结构用于渲染
+				var content= "",
+					footer="";
+
+				//如果有数据，就走这里
+				if(datas.length){
+					datas.forEach(function(item){
+						if(item.isChecked){
+							num++;
+						}
+					})
+
+					var arr = datas.map(function (item,index){
+						return <Item 
+									key={index} 
+									{...item}  
+									change={this.changeHandle}
+									delectItem={this.delectItemHandle}
+								/> 
+					}.bind(this));
+
+					content = <section className="main">
+								<input type="hidden" value="/*全选*/" />
+				                <input 
+				                	className="toggle-all" 
+				                	type="checkbox"
+				                	checked={num == datas.length ? true : false}
+				                	onChange={this.changeAllHandle}
+				                />
+				                <ul className="todo-list">
+				                    {arr}
+				                </ul>
+				            </section>
+
+				    footer = <footer className="footer">
+					            <span className="todo-count">
+					            	<strong>{datas.length-num}</strong>
+					            	<span>条未选中</span>
+					            </span>
+				            </footer>
+				}
+
+				return (
+						<div>
+				            <header className="header" >
+				                <h1>todos</h1>
+				                <input 
+				                	className="new-todo" 
+				                	placeholder="请输入内容" 
+				                	onKeyDown={this.downHandle}
+				                />
+				            </header>
+				            {content}
+				            {footer}
+				        </div>	
+					)
+			},
+			downHandle:function (ev){
+				if(ev.keyCode === 13){
+					var target = ev.target;
+					this.props.app.addItem(target.value);
+					target.value = "";
+				}
+			},
+			//操作放在aPP里面
+			changeHandle:function(id){
+				this.props.app.changeItem(id)
+			},
+			changeAllHandle:function(ev){
+				this.props.app.changeAll(ev.target.checked);
+			},
+			delectItemHandle:function(id){
+				this.props.app.delectItem(id);
+			}
+		});
+
+		render();
+
+		//数据渲染到页面
+		function render(){
+			ReactDOM.render(
+					<TodoApp data={data} app={app} />,
+					document.getElementById('todoapp')
+				)
+		}
+
+		app.render = render;
+	</script>
+</body>
+</html>
